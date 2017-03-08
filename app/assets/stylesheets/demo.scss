@@ -1,0 +1,42 @@
+/*.trial {
+	height: 1000px;
+  	width: 1000px;
+	background-size: 200% 100%;
+  	background-image: linear-gradient(to right, blue 50%, black 50%), linear-gradient(to right, grey 50%, white 50%);
+  	transition: background-position 6s;
+    text-indent: 28px;
+    font-size: 60px;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% top, 100% top;
+    -webkit-background-clip: text, border-box;
+    background-clip: text, border-box;
+    color: transparent;
+	transition: 2s ease-in-out .5s;
+}
+
+.trial:hover {
+	background-position: 0% top, 0% top;
+}*/
+
+.backing {
+  /*Reset*/
+  height: 1000px;
+  width: 1000px;
+  background-color: black;
+  color: black;
+  
+  /*Some fancy stuff*/
+  
+  line-height: 200%;
+  
+  
+  /*Magic*/
+  background-image: linear-gradient(black, black 50%, white 50%, white);
+  background-size: 100% 200%;
+  transition: background-position 20s;
+  
+  &:hover {
+    background-position: 0 -100%;
+  }
+}
